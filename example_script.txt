@@ -1,0 +1,36 @@
+Script_LEN:
+007D
+Script_HDR:
+AD5C07CF
+AD5C07CF
+2312
+TimeTable:
+00 05 00           S1
+00 06 00           S2
+00 07 00           S3
+                   EOT
+ScriptSequences:
+S1:
+00 02 OBC_SU_ON    01 01 
+00 02 SU_STIM      02 02 40
+00 02 SU_DUMP      01 03 
+00 02 OBC_SU_OFF   01 04 
+00 04 OBC_EOT      01 05 
+S2:
+00 02 OBC_SU_ON    01 06 
+00 02 SU_STIM      02 07 15
+00 02 SU_HVARM     01 08 
+00 20 SU_HVON      01 09 
+00 20 SU_SCI       06 10 C88E020005
+00 02 SU_DUMP      01 11 
+00 02 OBC_SU_OFF   01 12 
+00 04 OBC_EOT      01 13 
+S3:
+00 02 OBC_SU_ON    01 14 
+00 02 SU_STIM      02 15 04
+00 02 SU_DUMP      01 16 
+00 02 OBC_SU_OFF   01 17 
+00 04 OBC_EOT      01 18
+XSUM:
+93
+FF
